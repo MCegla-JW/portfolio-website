@@ -1,5 +1,7 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
 body {
     font-family: 'Sofia Sans', sans-serif;
+    background: #1d2230e6;
 }

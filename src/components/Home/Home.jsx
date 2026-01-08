@@ -9,10 +9,12 @@ import Career from "../Career/Career.jsx"
 import { FaTimeline } from "react-icons/fa6";
 import ThankYou from "../ThankYou/ThankYou.jsx"
 import{ Button } from '@headlessui/react'
+import NavBar from "../NavBar/NavBar.jsx"
 
 const Home = () => {
     return (
         <>
+        <NavBar/>
         <header className='intro'>
         {/* INTRO SECTION */}
         <div id='profile-photo'>
