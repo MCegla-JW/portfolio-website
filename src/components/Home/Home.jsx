@@ -8,6 +8,7 @@ import Skills from "../Skills/Skills.jsx"
 import Career from "../Career/Career.jsx"
 import { FaTimeline } from "react-icons/fa6";
 import ThankYou from "../ThankYou/ThankYou.jsx"
+import{ Button } from '@headlessui/react'
 
 const Home = () => {
     return (
@@ -21,6 +22,7 @@ const Home = () => {
         </div>
         <h1>Hi, I'm <span className='link'><Link to='/about'>Magda!</Link></span></h1>
         <p>Junior Software Engineer with a background in project delivery, focused on building clean, user-centred applications.</p>
+
         <Contact/>
         </header>
 
@@ -47,7 +49,7 @@ const Home = () => {
         {/* THANK YOU */}
         <ThankYou/>
         {/* FOOTER */}
-        
+
         </>
     )
 }
