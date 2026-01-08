@@ -3,6 +3,9 @@ import Magda from "../../assets/magda.png"
 import { Link } from "react-router"
 import { FaProjectDiagram } from "react-icons/fa"
 import Projects from "../Projects/Projects.jsx"
+import { FaTools } from "react-icons/fa"
+import Skills from "../Skills/Skills.jsx"
+
 
 const Home = () => {
     return (
@@ -31,6 +34,11 @@ const Home = () => {
             <Projects/>
         </div>
         </main>
+        {/* KEY SKILLS */}
+        <h2>
+        <FaTools size={40}/> Key Skills
+        </h2>
+        <Skills/>
         </>
     )
 }
