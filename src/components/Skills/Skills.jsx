@@ -17,72 +17,47 @@ import { BsFiletypeJsx } from "react-icons/bs";
 import { SiPostman } from "react-icons/si";
 import { FaFigma } from "react-icons/fa";
 import { SiMiro } from "react-icons/si";
+import { Button } from '@headlessui/react'
 
 
 const Skills = () => {
     return (
         <>
-        <div className='skills-list'>
-        <h3>Core Technologies</h3>
-        <div className="react">
-            <FaReact/> React
+        <div className='skills-list max-w-5xl mx-auto my-10 p-6 bg-base-200 rounded-lg shadow-lg'>
+        {/* Section Title */}
+        <h3 className='text-2xl font-bold text-center mb-6'>Core Technologies</h3>
+        {/* Button Row */}
+        <div className="flex flex-wrap justify-center gap-4">
+            <Button className="rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2"><FaReact size={25}/> React</Button>
+            <Button className="rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2"><IoLogoJavascript size={25}/> JavaScript (ES6)</Button>
+            <Button className="rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2"><FaPython size={25}/> Python</Button>
+            <Button className="rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2"><FaNodeJs size={25}/> Node.js</Button>
         </div>
-            <div className="javascript">
-            <IoLogoJavascript/> JavaScript (ES6)
+        {/* Styling Section */}
+        <h3 className='text-2xl font-bold text-center mt-8 mb-6'>Styling & UI</h3>
+        <div className="flex flex-wrap justify-center gap-4">
+            <Button className="rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2"><FaHtml5 size={25}/> HTML5</Button>
+            <Button className="rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2"><FaCss3Alt size={25}/> CSS3</Button>
+            <Button className="rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2"><RiTailwindCssFill size={25}/> Tailwind</Button>
+            <Button className="rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2"><BsFiletypeJsx size={25}/> JSX</Button>
         </div>
-        <div className="python">
-            <FaPython/> Python
+        {/* Databases Section */}
+        <h3 className='text-2xl font-bold text-center mt-8 mb-6'>Databases</h3>
+        <div className="flex flex-wrap justify-center gap-4">
+            <Button className="rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2"><SiMongodb size={25}/> MongoDB</Button>
+            <Button className="rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2"><DiPostgresql size={25}/> PostgreSQL</Button>
         </div>
-        <div className="django">
-            <SiDjango/> Django
-        </div>
-        <div className="node-js">
-            <FaNodeJs/> Node.js
-        </div>
-        <h3>Styling & UI</h3>
-        <div className="html">
-            <FaHtml5/> HTML5
-        </div>
-        <div className="css">
-            <FaCss3Alt/> CSS3
-        </div>
-        <div className="tailwind">
-            <RiTailwindCssFill/> Tailwind
-        </div>
-        <div className="jsx">
-            <BsFiletypeJsx/> JSX
-        </div>
-        <h3>Databases</h3>
-        <div className="mongo-db">
-            <SiMongodb/> MongoDB
-        </div>
-        <div className="postgresql">
-            <DiPostgresql/> PostgreSQL
-        </div>
-        <h3>Tools & Deployment</h3>
-        <div className="github">
-            <FaGithub/> GitHub
-        </div>
-        <div className="express">
-            <SiExpress/> Express
-        </div>
-        <div className="postman">
-            <SiPostman/> Postman
-        </div>
-        <div className="netlify">
-            <SiNetlify/> Netlify
-        </div>
-        <div className="vercel">
-            <IoLogoVercel/> Vercel
-        </div>
-        <div className="heroku">
-            <GrHeroku/> Heroku
-        </div>
-        <div className="figma">
-            <FaFigma/> Figma
-        </div>
-        <div className="miro">
-            <SiMiro/> Miro
+        {/* Toold & Deployment Section */}
+        <h3 className='text-2xl font-bold text-center mt-8 mb-6'>Tools & Deployment</h3>
+        <div className="flex flex-wrap justify-center gap-4">
+            <Button className="rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2"><FaGithub size={25}/> GitHub</Button>
+            <Button className="rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2"><SiExpress size={25}/> Express</Button>
+            <Button className="rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2"><SiPostman size={25}/> Postman</Button>
+            <Button className="rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2"><SiNetlify size={25}/> Netlify</Button>
+            <Button className="rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2"><IoLogoVercel size={25}/> Vercel</Button>
+            <Button className="rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2"><GrHeroku size={25}/> Heroku</Button>
+            <Button className="rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2"><FaFigma size={25}/> Figma</Button>
+            <Button className="rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2"><SiMiro size={25}/> Miro</Button>
         </div>
         </div>
         </>

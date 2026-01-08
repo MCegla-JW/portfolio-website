@@ -1,3 +1,6 @@
+import { Button } from '@headlessui/react'
+import { Link } from 'react-router'
+
 const NavBar = () => {
 return (
 <div className="drawer">
@@ -26,22 +29,22 @@ return (
       <div className="hidden flex-none lg:block">
         <ul className="menu menu-horizontal">
           {/* Navbar menu content here */}
-          <li><a>About</a></li>
-          <li><a>Selected Projects</a></li>
-          <li><a>Key Skills</a></li>
-          <li><a>Previous Experience</a></li>
+          <li><Button className="rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 m-2"><Link to='/about'>About</Link></Button></li>
+          <li><Button className="rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 m-2"><a href='#selected-projects'>Selected Projects</a></Button></li>
+          <li><Button className="rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 m-2"><a href='#key-skills'>Key Skills</a></Button></li>
+          <li><Button  className="rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 m-2"><a href='#previous-experience'>Previous Experience</a></Button></li>
         </ul>
       </div>
     </div>
-    {/* Page content here */}
-    Content
   </div>
   <div className="drawer-side">
     <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label>
-    <ul className="menu bg-base-200 min-h-full w-80 p-4">
+    <ul className="menu bg-base-200 min-h-full w-80 p-4 items-center pt-60">
       {/* Sidebar content here */}
-      <li><a>Sidebar Item 1</a></li>
-      <li><a>Sidebar Item 2</a></li>
+        <li><Button className="rounded bg-slate-600 px-4 py-2 text-2xl text-white data-active:bg-sky-700 data-hover:bg-sky-500 m-2"><Link to='/about'>About</Link></Button></li>
+        <li><Button className="rounded bg-slate-600 px-4 py-2 text-2xl text-white data-active:bg-sky-700 data-hover:bg-sky-500 m-2"><a href='#selected-projects'>Selected Projects</a></Button></li>
+        <li><Button className="rounded bg-slate-600 px-4 py-2 text-2xl text-white data-active:bg-sky-700 data-hover:bg-sky-500 m-2"><a href='#key-skills'>Key Skills</a></Button></li>
+        <li><Button Button className="rounded bg-slate-600 px-4 py-2 text-2xl text-white data-active:bg-sky-700 data-hover:bg-sky-500 m-2"><a href='#previous-experience'>Previous Experience</a></Button></li>
     </ul>
   </div>
 </div>

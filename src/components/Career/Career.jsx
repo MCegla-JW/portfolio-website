@@ -1,5 +1,4 @@
 
-
 const careers = [
     {
         id: 0,

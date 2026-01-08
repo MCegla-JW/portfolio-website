@@ -11,7 +11,8 @@ const Projects = () => {
         <div className='projects'>
         {/* PROJECT 1 */}
         <div className="phone">
-          <a href='https://movienight-app-project.netlify.app/movies' target='_blank' rel='noopener noreferrer'><img src={MovieNight} className="project-img"/></a>
+        <img src={MovieNight} className="project-img"/>
+        <a href='https://movienight-app-project.netlify.app/movies' target='_blank' rel='noopener noreferrer'></a>
         </div>
         <h3><a href='https://movienight-app-project.netlify.app/movies' target='_blank' rel='noopener noreferrer'>MovieNight</a></h3>
         <h4>Full-stack movie discovery and watch party app | Solo project | 9 days</h4>
