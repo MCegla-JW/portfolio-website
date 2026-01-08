@@ -5,7 +5,9 @@ import { FaProjectDiagram } from "react-icons/fa"
 import Projects from "../Projects/Projects.jsx"
 import { FaTools } from "react-icons/fa"
 import Skills from "../Skills/Skills.jsx"
-
+import Career from "../Career/Career.jsx"
+import { FaTimeline } from "react-icons/fa6";
+import ThankYou from "../ThankYou/ThankYou.jsx"
 
 const Home = () => {
     return (
@@ -39,6 +41,13 @@ const Home = () => {
         <FaTools size={40}/> Key Skills
         </h2>
         <Skills/>
+        {/* WORK EXPERIENCE */}
+        <h2><FaTimeline/>Previous Experience</h2>
+        <Career/>
+        {/* THANK YOU */}
+        <ThankYou/>
+        {/* FOOTER */}
+        
         </>
     )
 }

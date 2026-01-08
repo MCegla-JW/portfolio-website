@@ -1,4 +1,3 @@
-import { Link } from 'react-router'
 import MovieNight from '../../assets/discover-cards.png'
 import TravelAgent from '../../assets/main-page.png'
 import DogSpotting from '../../assets/main-menu.jpg'
@@ -11,8 +10,8 @@ const Projects = () => {
         <>
         <div className='projects'>
         {/* PROJECT 1 */}
-        <div class="phone">
-          <a href='https://movienight-app-project.netlify.app/movies' target='_blank' rel='noopener noreferrer'><img src={MovieNight} class="project-img"/></a>
+        <div className="phone">
+          <a href='https://movienight-app-project.netlify.app/movies' target='_blank' rel='noopener noreferrer'><img src={MovieNight} className="project-img"/></a>
         </div>
         <h3><a href='https://movienight-app-project.netlify.app/movies' target='_blank' rel='noopener noreferrer'>MovieNight</a></h3>
         <h4>Full-stack movie discovery and watch party app | Solo project | 9 days</h4>
@@ -24,7 +23,7 @@ const Projects = () => {
         <button><a href='https://github.com/MCegla-JW/movie-night-backend' target='_blank' rel='noopener noreferrer'><FaGithub />ReadMe Backend</a></button>
         {/* PROJECT 2 */}
         <div className="phone">
-          <a href='https://travel-agent-ten-nu.vercel.app/' target='_blank' rel='noopener noreferrer'><img src={TravelAgent} class="project-img"/></a>
+          <a href='https://travel-agent-ten-nu.vercel.app/' target='_blank' rel='noopener noreferrer'><img src={TravelAgent} className="project-img"/></a>
         </div>
         <h3><a href='https://travel-agent-ten-nu.vercel.app/' target='_blank' rel='noopener noreferrer'>Travel Agent</a></h3>
         <h4>Full-stack trip planning app with AI-powered activity recommendations | Paired project | 7 days</h4>
@@ -36,7 +35,7 @@ const Projects = () => {
         <button><a href='https://github.com/MCegla-JW/travel-agent' target='_blank' rel='noopener noreferrer'><FaGithub/>GitHub Frontend</a></button>
         {/* PROJECT 3 */}
         <div className="phone">
-          <a href='https://dogspotting.netlify.app/' target='_blank' rel='noopener noreferrer'><img src={DogSpotting} class="project-img"/></a>
+          <a href='https://dogspotting.netlify.app/' target='_blank' rel='noopener noreferrer'><img src={DogSpotting} className="project-img"/></a>
         </div>
         <h3><a href='https://dogspotting.netlify.app/' target='_blank' rel='noopener noreferrer'>DogSpotting</a></h3>
         <h4>Full-stack MEN CRUD app for sharing, liking, and rating dog sightings | Solo proect | 7 days</h4>
@@ -46,7 +45,7 @@ const Projects = () => {
         <button><a href='https://github.com/MCegla-JW/MEN-Stack-CRUD-App---DogSpotting---Project-2' target='_blank' rel='noopener noreferrer'><FaGithub/>GitHub</a></button>
          {/* PROJECT 4 */}
         <div className="phone">
-          <a href='https://mcegla-jw.github.io/PacMan-game-GA-project-1/' target='_blank' rel='noopener noreferrer'><img src={PacDog} class="project-img"/></a>
+          <a href='https://mcegla-jw.github.io/PacMan-game-GA-project-1/' target='_blank' rel='noopener noreferrer'><img src={PacDog} className="project-img"/></a>
         </div>
         <h3><a href='https://mcegla-jw.github.io/PacMan-game-GA-project-1/' target='_blank' rel='noopener noreferrer'>PacDog</a></h3>
         <h4>Browser-based grid game inspired by PacMan | Solo project | 7 days</h4>
