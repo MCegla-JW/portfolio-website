@@ -27,17 +27,16 @@ const Home = () => {
         <span className='absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-600 transition-all duration-500 group-hover:w-full'></span>
         </Link></h1>
         <p className='text-xl'>Junior Software Engineer with a background in project delivery, focused on building clean, user-centred applications.</p>
-
         <Contact/>
         </div>
         </header>
 
         {/* PORTFOLIO SECTION */}
         <main className='portfolio-section'>
-        <h2 id='selected-projects' className='text-2xl font-bold text-center mb-6 flex items-center justify-center gap-4 flex-row mt-3'>
+        <h2 id='selected-projects' className='text-3xl font-bold text-center mb-6 flex items-center justify-center gap-4 flex-row mt-3'>
         <FaProjectDiagram size={50}/> Selected Projects
         </h2>
-        <p className='paragraph text-2xl text-center mb-6 flex items-center justify-center gap-4 flex-row'>
+        <p className='paragraph text-xl font-semibold text-center mb-6 flex items-center justify-center gap-4 flex-row'>
             These are some key projects I have worked on, building from scratch across the front and back-end:
         </p>
         <div className='projects'>
@@ -45,20 +44,22 @@ const Home = () => {
         </div>
         </main>
         {/* KEY SKILLS */}
-        <h2 id='key-skills' className='text-2xl font-bold text-center mb-6 flex items-center justify-center gap-4 flex-row'>
+        <h2 id='key-skills' className='text-3xl font-bold text-center mb-6 flex items-center justify-center gap-4 flex-row'>
         <FaTools size={40}/> Key Skills
         </h2>
         <Skills/>
         {/* WORK EXPERIENCE */}
-        <h2 id='previous-experience' className='text-2xl font-bold text-center mb-6 flex items-center justify-center gap-4 flex-row'><FaTimeline/>Previous Experience</h2>
-        <p className='paragraph text-2xl font-bold text-center mb-6 flex items-center justify-center gap-4 flex-row'>
+        <h2 id='previous-experience' className='text-3xl font-bold text-center mb-6 flex items-center justify-center gap-4 flex-row'><FaTimeline/>Previous Experience</h2>
+        <div className="max-w-6xl mx-auto px-6 mb-8">
+        <p className='paragraph text-xl font-semibold text-center mb-6 flex items-center justify-center gap-4 flex-row'>
             I have extensive extensive experience in project management and I am exicted to combine it with my new software engineering skils to deliver top-class products.
         </p>
+        </div>
         <Career/>
         {/* THANK YOU */}
         <ThankYou/>
         {/* FOOTER */}
-
+        
         </>
     )
 }

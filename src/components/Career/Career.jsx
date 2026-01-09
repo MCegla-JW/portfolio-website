@@ -52,6 +52,7 @@ const careers = [
 
 const Career = () => {
     return (
+<div className='skills-list max-w-5xl mx-auto my-10 p-6 bg-base-200 rounded-lg shadow-lg'>
 <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
     {careers.map((career, index) => (
   <li key={career.id}>
@@ -74,7 +75,7 @@ const Career = () => {
         index % 2 === 0 ? "timeline-start mb-10 md:text-end" : "timeline-end"} mb-10`}>
       <time className="font-mono italic">{career.startDate} - {career.endDate}</time>
       <div className="text-lg font-black">{career.companyName}</div>
-        <div className="collapse collapse-arrow bg-base-100 border-base-300 border">
+        <div className="collapse collapse-arrow bg-gray-700 border-base-300 border">
         <input type="checkbox" />
         <div className="collapse-title font-semibold flex gap-2 items-center ">{career.jobTitle}</div>
          <div className="collapse-content text-sm">
@@ -86,6 +87,7 @@ const Career = () => {
   </li>
     ))}
     </ul>
+    </div>
     )
 }
 

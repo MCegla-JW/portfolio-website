@@ -18,45 +18,31 @@ import { SiDaisyui } from "react-icons/si";
 import { SiMongoose } from "react-icons/si";
 import { SiCloudinary } from "react-icons/si";
 import { SiNodedotjs } from "react-icons/si";
+import PhoneMockup from "../PhoneMockup/PhoneMockup";
 
 const Projects = () => {
   return (
     <>
       <div className="projects">
         {/* PROJECT 1 */}
-        <div className="max-w-6xl mx-auto my-12 p-6 bg-base-100 rounded-lg shadow-lg">
-          <div className="flex flex-col lg:flex-row items-center lg:gap-14">
+        <div className="max-w-6xl mx-auto my-12 p-6 bg-neutral-600 rounded-xl shadow-2xl transition-transform duration-500 hover:scale-105 hover:shadow-3xl">
+          <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-14">
             {/* Phone */}
-            <figure className="flex justify-center items-center lg:w-1/5">
-              <a
-                href="https://movienight-app-project.netlify.app/movies"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex justify-center"
-              >
-                <div className="mockup-phone scale-75 sm:scale-90 lg:scale-110">
-                  <div className="mockup-phone-camera"></div>
-                  <div className="mockup-phone-display text-white flex items-center justify-center p-1 place-content-center bg-neutral-900">
-                    <img
-                      src={MovieNight}
-                      alt="MovieNight app screenshot"
-                      className="project-img w-auto object-contain max-h-120"
-                    />
-                  </div>
-                </div>
-              </a>
+            <figure className="flex justify-center items-center lg:w-1/3 shrink-0">
+            <PhoneMockup imageSrc={MovieNight} link="https://movienight-app-project.netlify.app/movies" objectFit="cover"/>
             </figure>
             {/* Content */}
             <div className="card-content lg:w-4/5 text-center lg:text-left">
               <h3 className="text-2xl font-bold mb-4">
                 <a
                   href="https://movienight-app-project.netlify.app/movies"
-                  className="group inline-block"
+                  className="group relative inline-block"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   MovieNight
-                  <span className="block h-0.5 max-w-0 group-hover:max-w-full transition-all duration-500 bg-gray-600"></span>
+                  <span className="absolute left-0 -bottom-1 h-0.5 w-full bg-gray-300"></span>
+                  <span className='absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-600 transition-all duration-500 group-hover:w-full'></span>
                 </a>
               </h3>
               <h4 className="text-xl font-semibold mb-4">
@@ -106,19 +92,20 @@ const Projects = () => {
           </div>
         </div>
         {/* PROJECT 2 */}
-        <div className="max-w-6xl mx-auto my-12 p-6 bg-base-100 rounded-lg shadow-lg">
+        <div className="max-w-6xl mx-auto my-12 p-6 bg-neutral-600 rounded-xl shadow-2xl transition-transform duration-500 hover:scale-105 hover:shadow-3xl">
           <div className="flex flex-col lg:flex-row items-center lg:gap-14">
             {/* Content */}
             <div className="card-content lg:w-4/5 text-center lg:text-left">
               <h3 className="text-2xl font-bold mb-4">
                 <a
                   href="https://travel-agent-ten-nu.vercel.app/"
-                  className="group inline-block"
+                  className="group relative inline-block"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Travel Agent
-                  <span className="block h-0.5 max-w-0 group-hover:max-w-full transition-all duration-500 bg-gray-600"></span>
+                  <span className="absolute left-0 -bottom-1 h-0.5 w-full bg-gray-300"></span>
+                  <span className='absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-600 transition-all duration-500 group-hover:w-full'></span>
                 </a>
               </h3>
               <h4 className="text-xl font-semibold mb-4">
@@ -167,63 +154,31 @@ const Projects = () => {
               </div>
             </div>
             {/* Phone */}
-            <figure className="flex justify-center items-center lg:w-1/5">
-              <a
-                href="https://travel-agent-ten-nu.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex justify-center"
-              >
-                <div className="mockup-phone scale-75 sm:scale-90 lg:scale-110">
-                  <div className="mockup-phone-camera"></div>
-                  <div className="mockup-phone-display text-white flex items-center justify-center p-1 place-content-center bg-neutral-900">
-                    <img
-                      src={TravelAgent}
-                      alt="Travel Agent app screenshot"
-                      className="project-img w-auto object-contain max-h-120"
-                    />
-                  </div>
-                </div>
-              </a>
+            <figure className="flex justify-center items-center lg:w-1/5 m-4">
+              <PhoneMockup imageSrc={TravelAgent} link="https://travel-agent-ten-nu.vercel.app/"/>
             </figure>
           </div>
         </div>
 
         {/* PROJECT 3 */}
-
-        <div className="max-w-6xl mx-auto my-12 p-6 bg-base-100 rounded-lg shadow-lg">
+        <div className="max-w-6xl mx-auto my-12 p-6 bg-neutral-600 rounded-xl shadow-2xl transition-transform duration-500 hover:scale-105 hover:shadow-3xl">
           <div className="flex flex-col lg:flex-row items-center lg:gap-14">
             {/* Phone */}
-            <figure className="flex justify-center items-center lg:w-1/5">
-              <a
-                href="https://dogspotting.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex justify-center"
-              >
-                <div className="mockup-phone scale-75 sm:scale-90 lg:scale-110">
-                  <div className="mockup-phone-camera"></div>
-                  <div className="mockup-phone-display text-white flex items-center justify-center p-1 place-content-center bg-neutral-900">
-                    <img
-                      src={DogSpotting}
-                      alt="DogSpotting app screenshot"
-                      className="project-img w-auto object-contain max-h-120"
-                    />
-                  </div>
-                </div>
-              </a>
+            <figure className="flex justify-center items-center lg:w-1/5 m-4">
+              <PhoneMockup imageSrc={DogSpotting} link="https://dogspotting.netlify.app/" objectFit="contain" objectPosition="center"/>
             </figure>
             {/* Content */}
             <div className="card-content lg:w-4/5 text-center lg:text-left">
               <h3 className="text-2xl font-bold mb-4">
                 <a
                   href="https://dogspotting.netlify.app/"
-                  className="group inline-block"
+                  className="group relative inline-block"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   DogSpotting
-                  <span className="block h-0.5 max-w-0 group-hover:max-w-full transition-all duration-500 bg-gray-600"></span>
+                  <span className="absolute left-0 -bottom-1 h-0.5 w-full bg-gray-300"></span>
+                  <span className='absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-600 transition-all duration-500 group-hover:w-full'></span>
                 </a>
               </h3>
               <h4 className="text-xl font-semibold mb-4">
@@ -263,19 +218,20 @@ const Projects = () => {
         </div>
 
         {/* PROJECT 4 */}
-        <div className="max-w-6xl mx-auto my-12 p-6 bg-base-100 rounded-lg shadow-lg">
+        <div className="max-w-6xl mx-auto my-12 p-6 bg-neutral-600 rounded-xl shadow-2xl transition-transform duration-500 hover:scale-105 hover:shadow-3xl">
           <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-14">
             {/* Content */}
             <div className="card-content lg:w-4/5 text-center lg:text-left">
               <h3 className="text-2xl font-bold mb-4">
                 <a
                   href="https://mcegla-jw.github.io/PacMan-game-GA-project-1/"
-                  className="group inline-block"
+                  className="group relative inline-block"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   PacDog
-                  <span className="block h-0.5 max-w-0 group-hover:max-w-full transition-all duration-500 bg-gray-600"></span>
+                  <span className="absolute left-0 -bottom-1 h-0.5 w-full bg-gray-300"></span>
+                  <span className='absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-600 transition-all duration-500 group-hover:w-full'></span>
                 </a>
               </h3>
               <h4 className="text-xl font-semibold mb-4">
