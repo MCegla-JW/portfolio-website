@@ -31,6 +31,7 @@ const Skills = () => {
             <Button className="rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2"><FaReact size={25}/> React</Button>
             <Button className="rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2"><IoLogoJavascript size={25}/> JavaScript (ES6)</Button>
             <Button className="rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2"><FaPython size={25}/> Python</Button>
+            <Button className="rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2"><SiDjango size={25}/> Django</Button>
             <Button className="rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2"><FaNodeJs size={25}/> Node.js</Button>
         </div>
         {/* Styling Section */}

@@ -23,8 +23,10 @@ const Home = () => {
         <img src={Magda} alt='profile photo' className='w-full h-full object-cover'/>
         </Link>
         </div>
-        <h1>Hi, I'm <span className='link'><Link to='/about'>Magda!</Link></span></h1>
-        <p>Junior Software Engineer with a background in project delivery, focused on building clean, user-centred applications.</p>
+        <h1 className='text-xl'>Hi, I'm {' '}<Link to='/about' className='relative group inline-block'>Magda!<span className='absolute left-0 -bottom-1 h-0.5 w-full bg-gray-300 opacity-30'></span>
+        <span className='absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-600 transition-all duration-500 group-hover:w-full'></span>
+        </Link></h1>
+        <p className='text-xl'>Junior Software Engineer with a background in project delivery, focused on building clean, user-centred applications.</p>
 
         <Contact/>
         </div>
@@ -35,7 +37,7 @@ const Home = () => {
         <h2 id='selected-projects' className='text-2xl font-bold text-center mb-6 flex items-center justify-center gap-4 flex-row mt-3'>
         <FaProjectDiagram size={50}/> Selected Projects
         </h2>
-        <p className='paragraph text-2xl font-bold text-center mb-6 flex items-center justify-center gap-4 flex-row'>
+        <p className='paragraph text-2xl text-center mb-6 flex items-center justify-center gap-4 flex-row'>
             These are some key projects I have worked on, building from scratch across the front and back-end:
         </p>
         <div className='projects'>
