@@ -1,15 +1,15 @@
-import Contact from "../Contact/Contact.jsx"
-import Magda from "../../assets/magda.png"
-import { Link } from "react-router"
-import { FaProjectDiagram } from "react-icons/fa"
-import Projects from "../Projects/Projects.jsx"
-import { FaTools } from "react-icons/fa"
-import Skills from "../Skills/Skills.jsx"
-import Career from "../Career/Career.jsx"
-import { FaTimeline } from "react-icons/fa6";
-import ThankYou from "../ThankYou/ThankYou.jsx"
+import Contact from '../Contact/Contact.jsx'
+import Magda from '../../assets/magda.png'
+import { Link } from 'react-router'
+import { FaProjectDiagram } from 'react-icons/fa'
+import Projects from '../Projects/Projects.jsx'
+import { FaTools } from 'react-icons/fa'
+import Skills from '../Skills/Skills.jsx'
+import Career from '../Career/Career.jsx'
+import { FaTimeline } from 'react-icons/fa6'
+import ThankYou from '../ThankYou/ThankYou.jsx'
 import{ Button } from '@headlessui/react'
-import NavBar from "../NavBar/NavBar.jsx"
+import NavBar from '../NavBar/NavBar.jsx'
 
 const Home = () => {
     return (
@@ -50,9 +50,9 @@ const Home = () => {
         <Skills/>
         {/* WORK EXPERIENCE */}
         <h2 id='previous-experience' className='text-3xl font-bold text-center mb-6 flex items-center justify-center gap-4 flex-row'><FaTimeline/>Previous Experience</h2>
-        <div className="max-w-6xl mx-auto px-6 mb-8">
+        <div className='max-w-6xl mx-auto px-6 mb-8'>
         <p className='paragraph text-xl font-semibold text-center mb-6 flex items-center justify-center gap-4 flex-row'>
-            I have extensive extensive experience in project management and I am exicted to combine it with my new software engineering skils to deliver top-class products.
+            I have extensive experience in project management and I am excited to combine it with my new software engineering skills to deliver top-class products.
         </p>
         </div>
         <Career/>
