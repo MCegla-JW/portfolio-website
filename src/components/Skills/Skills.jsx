@@ -18,7 +18,7 @@ import { SiPostman } from 'react-icons/si';
 import { FaFigma } from 'react-icons/fa';
 import { SiMiro } from 'react-icons/si';
 import { Button } from '@headlessui/react'
-
+import { SiTypescript } from "react-icons/si";
 
 const Skills = () => {
     return (
@@ -30,6 +30,7 @@ const Skills = () => {
         <div className='flex flex-wrap justify-center gap-4'>
             <Button className='rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2'><FaReact size={25}/> React</Button>
             <Button className='rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2'><IoLogoJavascript size={25}/> JavaScript (ES6)</Button>
+            <Button className='rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2'><SiTypescript size={25}/> TypeScript</Button>
             <Button className='rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2'><FaPython size={25}/> Python</Button>
             <Button className='rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2'><SiDjango size={25}/> Django</Button>
             <Button className='rounded bg-slate-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500 flex items-center justify-center gap-2'><FaNodeJs size={25}/> Node.js</Button>
